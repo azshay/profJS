@@ -1,0 +1,158 @@
+@-webkit-keyframes rotate-center
+  0%
+    -webkit-transform: rotate(0)
+    transform: rotate(0)
+
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+@keyframes rotate-center
+    0%
+        -webkit-transform: rotate(0)
+        transform: rotate(0)
+
+    100%
+        -webkit-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+.cart
+    margin-top: 96px
+    margin-bottom: 128px
+    display: flex
+    justify-content: space-between
+    &__products__card
+        display: flex
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+        width: 652px
+        margin-bottom: 40px
+        &__last
+            margin-bottom: 72px
+    &__card__img
+        &__ch
+            max-width: 263px
+    &__card
+        &__descr
+            padding-left: 31px
+            padding-top: 22px
+            max-width: 212px
+        &__name
+            font-size: 24px
+            line-height: 29px
+            color: $black
+        &__price
+            margin-top: 42px
+        &__price, &__color, &__size, &__quantity
+            font-size: 22px
+            line-height: 26px
+        &__quantity
+            display: flex
+            &__span__input
+                outline: none
+                border: 1px solid #EAEAEA
+                margin-left: 25px
+                max-width: 44px
+                padding-left: 16px
+                height: 25px
+        &__span
+            color: $pink
+    &__buttons
+        display: flex
+        justify-content: space-between
+    &__button
+        padding: 17px 40px
+        border: 1px solid rgba(164, 164, 164, 1)
+        background: $white
+        font-size: 14px
+        line-height: 17px
+        outline: none
+        transition: all .7s
+        &:hover
+            background-color: rgba(164, 164, 164, 1)
+            color: #fff
+        &__link
+            color: #000
+    &__price
+        text-align: right
+        min-width: 292px
+        background-color: #F5F3F3
+        margin-top: 58px
+        padding: 40px 34px
+        &__subtotal
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+            margin-bottom: 12px
+            &__span
+                padding-left: 25px
+        &__grandtotal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: $black
+            &__span
+                padding-left: 25px
+                color: $pink
+                font-weight: 700
+        &__checkout
+            width: 100%
+            padding: 16px 42px
+            border: none
+            background-color: $pink
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #FFFFFF
+            transition: all 1s
+            &:hover
+                color: $pink
+                background-color: $white
+                padding: 15px 41px
+                border: 1px solid $black
+    &__prices
+        border-bottom: 1px solid rgba(226, 226, 226, 1)
+        margin-bottom: 17px
+        padding-bottom: 21px
+    &__delete
+        margin-top: 28px
+        margin-left: 100px
+        height: 100%
+        &:hover
+            -webkit-animation: rotate-center 0.6s ease-in-out both
+            animation: rotate-center 0.6s ease-in-out both
+
+.payAndDelivery
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    max-width: 360px
+
+.adress
+    &__heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $black
+        margin-top: 6px
+        margin-right: 224px
+    &__input
+        border: 1px solid rgba(164, 164, 164, 1)
+        width: 341px
+        height: 45px
+        padding-left: 17px
+        padding-right: 17px
+        margin-top: 20px
+        outline: none
+    &__quote
+        margin-top: 24px
+        padding: 9px 13px
+        max-width: 102px
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        border: 1px solid rgba(164, 164, 164, 1)
+        background-color: $white
+        outline: none
+        margin-right: 258px
+        &__link
+            color: #4A4A4A
