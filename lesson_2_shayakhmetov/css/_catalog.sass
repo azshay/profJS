@@ -1,0 +1,188 @@
+.catalog__menu
+    padding-top: 60px
+    padding-bottom: 60px
+    background: #f8f3f4
+    display: flex
+    justify-content: space-between
+    &__heading
+        font-size: 24px
+        line-height: 29px
+        color: #f16d7f
+
+    &__right
+        display: flex
+
+    &__text, &__text__del
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+    &__text
+        &:hover
+            margin-top: -3px
+        &__selected
+            font-weight: 700
+            color: $pink
+
+.assortment
+    &__menu
+        display: flex
+        padding-top: 51px
+        padding-bottom: 64px
+        position: relative
+    &__filter
+        position: absolute
+        z-index: 2
+        top: 38px
+        padding: 13px 16px
+        &__summary
+            padding-left: 11px
+            outline: none
+            display: block
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            color: #000000
+            &::-webkit-details-marker
+                display: none
+
+            &::after
+                content: url(../img/assortment__filter.svg)
+                padding-left: 11px
+
+        [open] > &__summary::after
+            content: url(../img/assortment__filter__active.svg)
+            color: $pink
+
+        &[open] &__summary
+            color: $pink
+
+        &[open]
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            min-height: 531px
+            min-width: 328px
+            background-color: #fff
+        &__sub__filter
+            margin-top: 18px
+            &[open] .assortment__filter__sub__sum
+                color: $pink
+        &__sub__sum
+            color: #6F6E6E
+            font-size: 14px
+            line-height: 17px
+            border-bottom: 1px solid #EBEBEB
+            padding-bottom: 11px
+            padding-top: 11px
+            padding-left: 11px
+            border-left: 5px solid $pink
+            outline: none
+            margin-bottom: 11px
+            &::-webkit-details-marker
+                display: none
+        &__subcat__text
+            list-style-type: none
+            padding-left: 18px
+            padding-top: 11px
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+
+    &__settings
+        margin-left: 276px
+        display: flex
+        position: relative
+
+        &__checkboxs
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            padding: 10px
+            margin-top: 5px
+            position: absolute
+            z-index: 2
+            background: #fff
+        &__checkbox
+            list-style-type: none
+        &__checkbox:not(:first-child)
+            margin-top: 6px
+        &__det
+            margin-left: 28px
+        &__span
+            margin-left: 9px
+
+        &__summary
+            padding-left: 11px
+            outline: none
+            display: block
+            font-size: 14px
+            line-height: 17px
+            color: #6f6e6e
+            &::-webkit-details-marker
+                display: none
+
+            &::after
+                content: url(../img/assortment__settings.svg)
+                padding-left: 11px
+
+    &__products
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__page
+        margin-top: 18px
+        margin-bottom: 96px
+        max-width: 283px
+        margin-right: auto
+        margin-left: auto
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 15px
+        border: 1px solid rgba(235, 235, 235, 1)
+        &__left,
+        &__right
+            border: none
+            background: none
+            outline: none
+
+    &__pages
+        border: none
+        background: none
+        outline: none
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: rgba(196, 196, 196, 1)
+        &__selected
+            color: $pink
+
+@media (max-width: 1023px)
+    .catalog__menu__heading
+        margin-left: 16px
+    .catalog__menu__right
+        margin-right: 16px
+    .assortment__products
+        justify-content: space-around
+    .assortment__filter
+        padding-left: 6px
+    .assortment__settings
+        margin-left: auto
+        margin-right: 16px
+
+@media (max-width: 425px)
+    .catalog__menu
+        flex-direction: column
+        text-align: center
+        &__right
+            padding-top: 32px
+            margin: 0 auto
+    .assortment__filter
+        &__span
+            display: none
+        &__summary
+            &::after
+                content: url(../img/filter.svg)
+    .assortment__settings__summary
+        margin-top: 5px
+        font-size: 12px
+        line-height: 14px

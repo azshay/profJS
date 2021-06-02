@@ -1,0 +1,80 @@
+.registration
+    margin-top: 64px
+    margin-bottom: 96px
+    display: flex
+    &__form
+        &__text
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: $black
+            margin-bottom: 20px
+        &__input
+            padding-left: 16px
+            width: 342px
+            height: 42px
+            border: 1px solid rgba(164, 164, 164, 1)
+            margin-bottom: 20px
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            padding-right: 16px
+        &__sex
+            margin-top: 10px
+            &__label
+                font-weight: 300
+                font-size: 13px
+                line-height: 13px
+
+        &__login
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: $black
+            margin-bottom: 20px
+        &__passwordtext
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            color: #B1B1B1
+            max-width: 360px
+            margin-top: -5px
+            margin-bottom: 40px
+        &__button
+            padding: 16px 29px
+            display: flex
+            background: $pink
+            border: none
+            color: $white
+            align-items: center
+            transition: all 1s
+            &:hover
+                background-color: $white
+                color: $pink
+                padding: 15px 28px
+                border: 1px solid $black
+                -webkit-animation: heartbeat 5s ease-in-out infinite both
+                animation: heartbeat 5s ease-in-out infinite both
+            &:hover &__svg
+                fill: $pink
+            &__icon
+                margin-left: 20px
+    &__texts
+        max-width: 652px
+        &__heading, &__advantages, &__p
+            +fontStyleRegistrationText()
+        &__advantages
+            display: flex
+            margin-top: 16px
+            &__icon
+                margin-right: 24px
+        &__heading
+            margin-bottom: 22px
+        &__p
+            margin-bottom: 6px
+#registration__form__sex__male, #registration__form__sex__female
+    margin-right: 10px
+    margin-bottom: 33px
+
+#registration__form__sex__female
+    margin-left: 20px
