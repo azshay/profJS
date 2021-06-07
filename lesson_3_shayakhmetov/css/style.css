@@ -121,6 +121,7 @@ h3 {
   margin-right: auto;
   margin-top: 10px;
   width: 570px;
+  display: none;
   padding: 0px 30px;
   background-color: #d1d1d1;
   position: relative;

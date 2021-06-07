@@ -89,4 +89,16 @@ class CartList {
                     this.render();
                });
      }
+
+     openCloseCart() {
+          const cartItem = document.querySelector(".cart__button-open");
+          const cartBlock = document.querySelector(".cart");
+          cartItem.addEventListener("click", () => {
+               if (cartBlock.style.display == "none") {
+                    cartBlock.style.display = "block";
+               } else {
+                    cartBlock.style.display = "none";
+               }
+          });
+     }
 }

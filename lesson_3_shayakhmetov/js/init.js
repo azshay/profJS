@@ -5,4 +5,5 @@ window.onload = async function () {
      goodsList.render();
      cartList.setAddToCart();
      cartList.clear();
+     await cartList.openCloseCart();
 };

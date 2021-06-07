@@ -163,7 +163,7 @@ const init = async () => {
           cart.addToCart();
      });
 
-     const cartItem = document.querySelector(".cart-button");
+     const cartItem = document.querySelector(".cart__button-open");
      const cartBlock = document.querySelector(".cart");
      cartItem.addEventListener("click", (event) => {
           if (cartBlock.style.display == "none") {
