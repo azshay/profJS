@@ -1,0 +1,128 @@
+body
+    margin: 0
+    padding: 0
+
+.header
+    display: flex
+    flex-direction: row
+    padding-bottom: 50px
+    padding-top: 50px
+    background: #e0a628
+    padding-left: calc(50% - 900px)
+    padding-right: calc(50% - 900px)
+
+.cart-button
+    margin-left: auto
+    background: #1B7C89
+    border: 1px solid black
+    padding: 10px 15px
+    outline: none
+    border-radius: 40px
+    color: white
+    transition: 2s
+    &:hover
+        color: #1B7C89
+        background-color: #fff
+        transition: 2s
+
+.goods-search
+    background-color: #1B7C89
+    border: 1px solid black
+    padding: 10px 15px
+    outline: none
+    border-radius: 40px
+    color: white
+
+.search-button
+    background: #1B7C89
+    border: 1px solid black
+    padding: 10px 15px
+    outline: none
+    border-radius: 40px
+    color: white
+    margin-left: 10px
+    transition: 2s
+    &:hover
+        color: #1B7C89
+        background-color: #fff
+        transition: 2s
+
+.goods-list
+    border: 2px solid black
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    padding-left: calc(50% - 900px)
+    padding-right: calc(50% - 900px)
+
+.goods-item
+    border: 1px solid wheat
+    width: 150px
+    box-sizing: border-box
+    padding: 20px 20px
+    margin: 10px 10px
+    text-align: center
+
+.button-item
+    background-color: #1B7C89
+    border: 1px solid black
+    padding: 10px 15px
+    outline: none
+    border-radius: 40px
+    color: white
+    transition: 2s
+    &:hover
+        color: #1B7C89
+        background-color: #fff
+        transition: 2s
+
+h3
+    margin: 0
+
+.cart
+    border: 1px solid black
+    min-height: 300px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 10px
+    width: 570px
+    display: none
+    padding: 0px 30px
+    background-color: #d1d1d1
+    position: relative
+    padding-bottom: 50px
+    &__item
+        background-color: #e0a628
+        margin-left: auto
+        margin-right: auto
+        margin-top: 10px
+        margin-bottom: 10px
+        min-height: 50px
+        border-radius: 15px
+        display: flex
+        padding: 5px
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.button__bottom
+    position: absolute
+    bottom: 10px
+.button__clear
+    right: 30px
+
+.total__price
+    display: flex
+    font-size: 14px
+    align-items: center
+    position: absolute
+    bottom: 0px
+    left: calc(50% - 40px)
+
+.price__total
+    margin-left: 10px
+
+.item
+    &__quantity
+        max-width: 40px

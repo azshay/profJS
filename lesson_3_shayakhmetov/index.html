@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+     <head>
+          <meta
+               http-equiv="Content-Type"
+               content="text/html; charset=windows-1251"
+          />
+          <title>eShop</title>
+          <link rel="stylesheet" href="css/style.css" />
+          <!-- <script src="js/script.js"></script> -->
+     </head>
+     <body>
+          <main>
+               <header class="header">
+                    <input type="text" class="goods-search" />
+                    <button class="search-button" type="button">Искать</button>
+                    <button class="cart-button cart__button-open" type="button">
+                         Корзина
+                    </button>
+               </header>
+               <main>
+                    <div class="goods-list"></div>
+                    <div class="cart">
+                         <div class="cart-items"></div>
+                         <button class="cart-button button__bottom">
+                              Перейти к оплате
+                         </button>
+                         <div class="total__price">
+                              <h4>Цена:</h4>
+                              <p class="price__total">0 руб.</p>
+                         </div>
+                         <button
+                              class="cart-button button__clear button__bottom"
+                         >
+                              Очистить корзину
+                         </button>
+                    </div>
+               </main>
+          </main>
+          <script src="js/GoodsItem.js"></script>
+          <script src="js/GoodsList.js"></script>
+          <script src="js/CartList.js"></script>
+          <script src="js/CartItem.js"></script>
+          <script src="js/init.js"></script>
+     </body>
+</html>
