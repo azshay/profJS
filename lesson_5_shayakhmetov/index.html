@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+     <head>
+          <meta
+               http-equiv="Content-Type"
+               content="text/html; charset=windows-1251"
+          />
+          <title>eShop</title>
+          <link rel="stylesheet" href="style.css" />
+     </head>
+     <body>
+          <div id="app">
+               <header class="header">
+                    <input
+                         type="text"
+                         class="goods-search"
+                         v-model="searchLine"
+                    />
+                    <button
+                         class="search-button"
+                         type="button"
+                         @click="getSearchedList(searchLine)"
+                    >
+                         Искать
+                    </button>
+                    <button
+                         class="cart-button"
+                         type="button"
+                         @click="changeCartVisibility"
+                    >
+                         Корзина
+                    </button>
+               </header>
+               <main>
+                    <div class="goods-list">
+                         <div class="goods-empty" style="display: none">
+                              Нет данных
+                         </div>
+                         <div class="goods-item" v-for="item in filteredGoods">
+                              <h3>{{item.product_name}}</h3>
+                              <p>{{item.price}} ₽</p>
+                              <button class="button-item button-buy">
+                                   Купить
+                              </button>
+                         </div>
+                    </div>
+                    <div class="cart">
+                         <div class="cart-items"></div>
+                         <button class="cart-button button__bottom">
+                              Перейти к оплате
+                         </button>
+                         <div class="total__price">
+                              <h4>Цена:</h4>
+                              <p class="price__total">0 руб.</p>
+                         </div>
+                         <button
+                              class="cart-button button__clear button__bottom"
+                         >
+                              Очистить корзину
+                         </button>
+                    </div>
+               </main>
+          </div>
+     </body>
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+     <script src="script.js"></script>
+</html>
