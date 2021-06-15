@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <link rel="stylesheet" href="css/style.css" />
+     </head>
+     <body>
+          <form action="#" class="burgers__form">
+               <h3 class="burgers__heading">Собери свой бургер!</h3>
+               <div class="burgers__info">
+                    <h3 class="burgers__heading">Выберите размер</h3>
+                    <div class="burgers__size">
+                         <div class="burger__small">
+                              <input
+                                   id="smallBurgerInput"
+                                   type="radio"
+                                   name="burgerSelect"
+                                   checked
+                              />
+                              <label for="smallBurgerInput"
+                                   >Маленький<br />50 рублей, 20 калорий</label
+                              >
+                         </div>
+                         <div class="burger__big">
+                              <input
+                                   id="bigBurgerInput"
+                                   type="radio"
+                                   name="burgerSelect"
+                              />
+                              <label for="bigBurgerInput"
+                                   >Большой<br />100 рублей, 40 калорий</label
+                              >
+                         </div>
+                    </div>
+                    <h3 class="burgers__heading">Выберите соус</h3>
+                    <div class="burgers__stuffing">
+                         <div class="burger__cheese burger__stuffing">
+                              <input type="checkbox" id="burgerCheeseInput" />
+                              <label for="burgerCheeseInput"
+                                   >С сыром<br />10 рублей, 20 калорий</label
+                              >
+                         </div>
+                         <div class="burger__malt burger__stuffing">
+                              <input type="checkbox" id="burgerMaltInput" />
+                              <label for="burgerMaltInput"
+                                   >С салатом<br />20 рублей, 5 калорий</label
+                              >
+                         </div>
+                         <div class="burger__potates burger__stuffing">
+                              <input type="checkbox" id="burgerPotatesInput" />
+                              <label for="burgerPotatesInput"
+                                   >С картошкой<br />15 рублей, 10
+                                   калорий</label
+                              >
+                         </div>
+                    </div>
+                    <h3 class="burgers__heading">Выберите начинку</h3>
+                    <div class="burgers__sous">
+                         <div class="burger__mayones burger__sous">
+                              <input type="checkbox" id="burgerMayonesInput" />
+                              <label for="burgerMayonesInput"
+                                   >С майонезом<br />20 рублей, 5 калорий</label
+                              >
+                         </div>
+                         <div class="burger__priprava burger__sous">
+                              <input type="checkbox" id="burgerPripravaInput" />
+                              <label for="burgerPripravaInput"
+                                   >С приправой<br />15 рублей, 0 калорий</label
+                              >
+                         </div>
+                    </div>
+               </div>
+               <div class="price">50 рублей</div>
+               <div class="calories">20 калорий</div>
+          </form>
+          <script src="js/Burger.js"></script>
+          <script src="js/init.js"></script>
+     </body>
+</html>

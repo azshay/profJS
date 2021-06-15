@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.burgers__form {
+  height: 500px;
+  background-color: #d6d6d6;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  position: relative;
+}
+
+.burgers__heading {
+  text-align: center;
+}
+
+.burgers__size, .burgers__stuffing, .burgers__sous {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.price, .calories {
+  position: absolute;
+  bottom: 30px;
+}
+
+.price {
+  left: 20%;
+}
+
+.calories {
+  left: 65%;
+}
+/*# sourceMappingURL=style.css.map */
