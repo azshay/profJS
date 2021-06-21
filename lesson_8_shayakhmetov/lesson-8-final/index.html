@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+     <head>
+          <meta
+               http-equiv="Content-Type"
+               content="text/html; charset=windows-1251"
+          />
+          <title>eShop</title>
+          <link rel="stylesheet" href="style.css" />
+     </head>
+     <body>
+          <div id="app">
+               <header class="header">
+                    <search
+                         v-model="searchLine"
+                         :whyonlylowercase="getSearchedList"
+                    ></search>
+                    <button
+                         class="cart-button"
+                         type="button"
+                         @click="changeCartVisibility"
+                    >
+                         Корзина
+                    </button>
+               </header>
+               <main>
+                    <goods-list
+                         :goods="filteredGoods"
+                         :func="getCart"
+                         :calcprice="calculateCartPrice"
+                    ></goods-list>
+                    <cart-list
+                         :goods="cartList"
+                         :func="getCart"
+                         :calcprice="calculateCartPrice"
+                    ></cart-list>
+               </main>
+          </div>
+     </body>
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+     <script src="dist/build.js"></script>
+</html>

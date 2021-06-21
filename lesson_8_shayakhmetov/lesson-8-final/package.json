@@ -1,0 +1,17 @@
+{
+  "name": "lesson-8-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.7.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

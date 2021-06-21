@@ -46,7 +46,7 @@ Vue.component("goods-item", {
 
      methods: {
           async addToCart() {
-               const response = await fetch(`${API_URL}/addToCart`, {
+               await fetch(`${API_URL}/addToCart`, {
                     method: "POST",
                     mode: "cors",
                     headers: {
